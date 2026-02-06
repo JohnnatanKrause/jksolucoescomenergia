@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard - JK Soluções</title>
+  <link rel="stylesheet" href="assets/css/restrita.css">
+</head>
+<body>
+  <div id="header"></div>
+
+  <main style="background-image: url('assets/img/restrita.png'); background-size: cover; background-position: center;">
+    <h1>Dashboard</h1>
+    <p>Bem-vindo ao sistema interno da JK Soluções.</p>
+    <ul>
+      <li><a href="forms.html">Formulários Técnicos</a></li>
+      <li><a href="relatorios.html">Relatórios</a></li>
+      <li><a href="propostas.html">Propostas</a></li>
+      <li><a href="laudos.html">Laudos</a></li>
+    </ul>
+  </main>
+
+  <div id="footer"></div>
+
+  <script>
+    fetch("partials/header-sistema.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("header").innerHTML = data);
+
+    fetch("partials/footer-sistema.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("footer").innerHTML = data);
+  </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Propostas Comerciais - JK Soluções</title>
+  <link rel="stylesheet" href="assets/css/propostas.css">
+</head>
+<body>
+  <div id="header"></div>
+
+  <main style="background-image: url('assets/img/proposta.png'); background-size: cover; background-position: center;">
+    <h1>Propostas Comerciais</h1>
+    <p>Crie e exporte propostas comerciais em PDF.</p>
+
+    <form id="form-proposta">
+      <fieldset>
+        <legend>Dados da Proposta</legend>
+        <label for="cliente">Cliente:</label>
+        <input type="text" id="cliente" name="cliente" required>
+
+        <label for="descricao">Descrição:</label>
+        <textarea id="descricao" name="descricao" rows="4" required></textarea>
+
+        <label for="valor">Valor (R$):</label>
+        <input type="number" id="valor" name="valor" required>
+      </fieldset>
+
+      <button type="submit">Gerar Proposta em PDF</button>
+    </form>
+  </main>
+
+  <div id="footer"></div>
+
+  <script>
+    fetch("partials/header-sistema.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("header").innerHTML = data);
+
+    fetch("partials/footer-sistema.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("footer").innerHTML = data);
+
+    document.getElementById("form-proposta").addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("Proposta gerada em PDF!");
+      // Aqui você pode integrar com jsPDF ou html2pdf
+    });
+  </script>
+</body>
+</html>

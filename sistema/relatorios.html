@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Relatório de Atendimento Técnico - JK Soluções</title>
+  <link rel="stylesheet" href="assets/css/relatorios.css">
+</head>
+<body>
+  <div id="header"></div>
+
+  <main style="background-image: url('assets/img/relatorio.png'); background-size: cover; background-position: center;">
+    <h1>RELATÓRIO DE ATENDIMENTO TÉCNICO</h1>
+
+    <section class="dados-os">
+      <p><strong>Ordem de Serviço:</strong> OS [NÚMERO]</p>
+      <p><strong>Cliente:</strong> [Nome do Cliente]</p>
+      <p><strong>Local:</strong> [Cidade/UF - Coordenadas]</p>
+      <p><strong>Contato Serviço:</strong> [Nome - Telefone]</p>
+      <p><strong>Contato Cliente:</strong> [Nome - Telefone]</p>
+      <p><strong>Engenheiro Responsável:</strong> Johnnatan Krause</p>
+      <p><strong>Serviço Prestado:</strong> [Descrição do Serviço]</p>
+      <p><strong>Período de Atendimento:</strong> [Data]</p>
+    </section>
+
+    <section class="atividades">
+      <h2>1.0 - DESCRIÇÃO DAS ATIVIDADES EXECUTADAS</h2>
+      <ul>
+        <li>[Atividade 1]</li>
+        <li>[Atividade 2]</li>
+        <li>[Atividade 3]</li>
+        <!-- adicionar conforme necessário -->
+      </ul>
+    </section>
+
+    <section class="financeiro">
+      <h2>2.0 - FECHAMENTO FINANCEIRO</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Descrição</th>
+            <th>Valor (R$)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>A</td>
+            <td>Hora Técnica</td>
+            <td>R$ [valor]</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td>Deslocamento</td>
+            <td>R$ [valor]</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td>Alimentação</td>
+            <td>R$ [valor]</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td>Peças</td>
+            <td>R$ [valor]</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><strong>TOTAL</strong></td>
+            <td><strong>R$ [valor]</strong></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="pagamento">
+      <h2>3.0 - CONDIÇÕES DE PAGAMENTO</h2>
+      <p>Forma de Pagamento: PIX / Boleto</p>
+      <p>Chave PIX: [CNPJ ou CPF]</p>
+      <p>Banco: Sisprime do Brasil</p>
+      <p>Prazo: [A combinar]</p>
+      <p><em>Observação:</em> [Observações adicionais]</p>
+    </section>
+
+    <section class="assinatura">
+      <p>Departamento Técnico Comercial</p>
+      <p>Eng. Eletricista Johnnatan Krause</p>
+      <p>(45) 9 8821-3899</p>
+      <p>jkrause.eng@gmail.com</p>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+
+  <script>
+    fetch("partials/header-sistema.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("header").innerHTML = data);
+
+    fetch("partials/footer-sistema.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("footer").innerHTML = data);
+  </script>
+</body>
+</html>

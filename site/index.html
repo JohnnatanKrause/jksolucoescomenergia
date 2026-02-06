@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>JK Soluções - Início</title>
+  <link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+  <div id="header"></div>
+
+  <main style="background-image: url('assets/img/home.png'); background-size: cover; background-position: center;">
+    <h1>Bem-vindo à JK Soluções</h1>
+    <p>Excelência em soluções técnicas e comerciais.</p>
+  </main>
+
+  <div id="footer"></div>
+
+  <script>
+    // Importa header e footer
+    fetch("partials/header-site.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("header").innerHTML = data);
+
+    fetch("partials/footer-site.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("footer").innerHTML = data);
+  </script>
+</body>
+</html>
