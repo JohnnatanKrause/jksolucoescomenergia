@@ -63,6 +63,9 @@ Repositório oficial do site institucional e sistema interno da **JK Soluções 
 
 ---
 
+
+- docs/ - Diretrizes do site JK soluções.pdf - README.md - site/ (site institucional) - index.html - sobre.html - servicos.html - diretrizes.html - contato.html - partials/ - header-site.html - footer-site.html - assets/ - css/ - site.css - js/ - site.js - img/ - (imagens institucionais) - sistema/ (área restrita) - login.html - dashboard.html - forms.html - relatorios.html - propostas.html - laudos.html - partials/ - header-sistema.html - footer-sistema.html - assets/ - css/ - restrita.css - forms.css - relatorios.css - propostas.css - laudos.css - pdf.css - js/ - restrita.js - form.js - relatorios.js - propostas.js - laudos.js - pdf.js - signature.js - img/ - (imagens internas) - assets/ (recursos globais) - css/ - global.css
+
 ## 🚀 Funcionalidades
 
 ### Site institucional
