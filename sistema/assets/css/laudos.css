@@ -1,0 +1,13 @@
+main {
+  background: var(--branco);
+  padding: 20px;
+}
+
+h1 {
+  color: var(--azul-escuro);
+  font-family: 'Montserrat', sans-serif;
+}
+
+section {
+  margin-bottom: 20px;
+}

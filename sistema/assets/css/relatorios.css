@@ -1,0 +1,19 @@
+main {
+  background: var(--branco);
+  padding: 20px;
+}
+
+h1 {
+  color: var(--azul-escuro);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+table th, table td {
+  border: 1px solid var(--cinza-grafite);
+  padding: 8px;
+}

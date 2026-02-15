@@ -1,0 +1,14 @@
+form {
+  background: var(--branco);
+  padding: 20px;
+  border: 1px solid var(--cinza-grafite);
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+button {
+  margin-top: 15px;
+}

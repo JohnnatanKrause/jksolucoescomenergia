@@ -1,0 +1,38 @@
+/* Global.css */
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Tipografia padrão */
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+  color: #444444;
+  background-color: #ffffff;
+  line-height: 1.6;
+}
+
+/* Paleta de cores */
+:root {
+  --azul-escuro: #003366;
+  --verde: #2E8B57;
+  --cinza-grafite: #444444;
+  --branco: #ffffff;
+}
+
+/* Links e botões */
+a {
+  color: var(--azul-escuro);
+  text-decoration: none;
+}
+
+button {
+  background: var(--verde);
+  color: var(--branco);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}

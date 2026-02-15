@@ -1,0 +1,17 @@
+form {
+  background: var(--branco);
+  padding: 20px;
+  border: 1px solid var(--cinza-grafite);
+  border-radius: 5px;
+}
+
+fieldset {
+  margin-bottom: 15px;
+  border: 1px solid var(--verde);
+  padding: 10px;
+}
+
+legend {
+  font-weight: bold;
+  color: var(--azul-escuro);
+}

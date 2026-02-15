@@ -1,0 +1,105 @@
+/* -----site.css------ */
+
+/* ===== HEADER ===== */
+header {
+    background: var(--azul-escuro);
+    padding: 10px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    height: 220px;
+    /* ajusta conforme necessário */
+    width: auto;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+header nav a {
+    color: var(--branco);
+    font-weight: 600;
+    font-size: 1.8rem; /* aumenta o tamanho da fonte dos links */
+    font-family: 'Montserrat', sans-serif;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: var(--verde);
+}
+
+/* ===== HERO (Home) ===== */
+main {
+    min-height: 100vh; /* reduz um pouco a altura para não parecer tão espichado */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    /* imagem de fundo */
+    background-image: url("../img/home.png");
+    background-size: cover;       /* cobre toda a área */
+    background-position: center;  /* centraliza */
+    background-repeat: no-repeat; /* evita repetição */
+    position: relative;
+    padding: 60px 20px; /* dá respiro interno para os textos */
+}
+
+main::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5); /* sobreposição escura */
+}
+
+main h1,
+main p,
+#btn-servicos {
+    position: relative; /* garante que fiquem acima da overlay */
+    z-index: 1;
+    color: var(--branco);
+}
+
+main h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+main p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin-bottom: 15px;
+}
+
+/* ===== BOTÃO HERO ===== */
+#btn-servicos {
+    margin-top: 20px;
+    background: var(--verde);
+    color: var(--branco);
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#btn-servicos:hover {
+    background: #246b45;
+    /* tom mais escuro do verde */
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background: var(--cinza-grafite);
+    color: var(--branco);
+    text-align: center;
+    padding: 40px;
+    font-size: 2.2rem;
+}

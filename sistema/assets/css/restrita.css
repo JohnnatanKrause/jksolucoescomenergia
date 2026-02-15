@@ -1,0 +1,23 @@
+main {
+  background: var(--branco);
+  padding: 30px;
+  text-align: center;
+}
+
+h1 {
+  color: var(--verde);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 10px 0;
+}
+
+ul li a {
+  color: var(--azul-escuro);
+  font-weight: bold;
+}
