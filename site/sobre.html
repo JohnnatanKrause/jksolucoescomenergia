@@ -1,4 +1,49 @@
-<main style="background-image: url('assets/img/sobre.png'); background-size: cover; background-position: center;">
-  <h1>Sobre a JK Soluções</h1>
-  <p>Missão, visão e valores da empresa.</p>
-</main>
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>JK Soluções - Engenharia que gera resultados</title>
+  <!-- Estilos globais -->
+  <link rel="stylesheet" href="../assets/global.css">
+</head>
+
+<body>
+  <!-- Header carregado dinamicamente -->
+  <div id="header"></div>
+
+  <main>
+    <section class="sobre" id="sobre">
+  <div class="sobre-container">
+    <div class="sobre-texto">
+      <h2>Sobre a JK Soluções</h2>
+      <p>
+        A JK Soluções nasceu para transformar desafios de engenharia em resultados concretos.
+        Com foco em inovação, excelência técnica e compromisso com nossos clientes,
+        seguimos construindo uma trajetória marcada pela confiança e pela entrega de valor.
+      </p>
+      
+    </div>
+    <div class="sobre-imagem">
+      <img src="/assets/img/sobre.png" alt="Equipe JK Soluções em ação">
+    </div>
+  </div>
+</section>
+  </main>
+
+  <!-- Footer carregado dinamicamente -->
+  <div id="footer"></div>
+
+  <!-- Inclusão dos partials -->
+  <script>
+    // Carregar header
+    fetch("partials/header-site.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("header").innerHTML = data);
+
+    // Carregar footer
+    fetch("partials/footer-site.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("footer").innerHTML = data);
+  </script>
+</body>
